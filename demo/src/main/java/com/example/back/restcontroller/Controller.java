@@ -44,19 +44,14 @@ public class Controller {
 		return userRepository.findById(id);
 	}
 	
-	@PostMapping(value ="/add")
+	@PostMapping(value ="/user/add")
 	public void addUser(@RequestBody User u) {
 		userRepository.save(u);
 	}
 	
-	@PutMapping(value ="/update")
-	public void updateUser(@RequestBody User u) {
-		userRepository.save(u);
-	}
-	
-	@DeleteMapping(value = "/delete")
-	public void deleteUser(@RequestBody User u) {
-		userRepository.delete(u);
+	@DeleteMapping(value = "/user/delete/{id}")
+	public void deleteUser(@PathVariable Long id) {
+		userRepository.deleteById(id);
 	}
 	
 	
