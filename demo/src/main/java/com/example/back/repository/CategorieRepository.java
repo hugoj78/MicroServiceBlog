@@ -7,5 +7,4 @@ import com.example.back.model.Categorie;
 
 @Repository
 public interface CategorieRepository extends CrudRepository<Categorie, Long>{
-
 }

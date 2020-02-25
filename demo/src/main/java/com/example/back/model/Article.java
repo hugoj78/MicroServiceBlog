@@ -16,9 +16,9 @@ public class Article {
 	@Column(name="id")
 	private Long id;
 	@Column(name="id_categorie")
-	private String id_categorie;
+	private Long idcategorie;
 	@Column(name="id_user")
-	private String id_user;
+	private Long id_user;
 	@Column(name="date")
 	private String date;
 	
@@ -28,16 +28,16 @@ public class Article {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getId_categorie() {
-		return id_categorie;
+	public Long getId_categorie() {
+		return idcategorie;
 	}
-	public void setId_categorie(String id_categorie) {
-		this.id_categorie = id_categorie;
+	public void setId_categorie(Long idcategorie) {
+		this.idcategorie = idcategorie;
 	}
-	public String getId_user() {
+	public Long getId_user() {
 		return id_user;
 	}
-	public void setId_user(String id_user) {
+	public void setId_user(Long id_user) {
 		this.id_user = id_user;
 	}
 	public String getDate() {

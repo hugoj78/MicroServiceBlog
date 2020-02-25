@@ -15,9 +15,9 @@ public class Commentaire {
 	@Column(name="id")
 	private Long id;
 	@Column(name="id_user")
-	private String id_user;
+	private Long id_user;
 	@Column(name="id_article")
-	private String id_article;
+	private Long id_article;
 	@Column(name="texte")
 	private String texte;
 	@Column(name="date")
@@ -29,16 +29,16 @@ public class Commentaire {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getId_user() {
+	public Long getId_user() {
 		return id_user;
 	}
-	public void setId_user(String id_user) {
+	public void setId_user(Long id_user) {
 		this.id_user = id_user;
 	}
-	public String getId_article() {
+	public Long getId_article() {
 		return id_article;
 	}
-	public void setId_article(String id_article) {
+	public void setId_article(Long id_article) {
 		this.id_article = id_article;
 	}
 	public String getTexte() {
