@@ -49,3 +49,5 @@
 2020-03-01 23:39:48.066  INFO 13057 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: back.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
 2020-03-01 23:42:24.905  INFO 13057 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-03-01 23:44:28.183  INFO 13057 --- [http-nio-9003-exec-4] com.example.msgateway.filters.MyFilter   : **** Requête interceptée ! L'URL est : http://macbookprohj.home:9003/back/users 
+2020-03-01 23:47:24.910  INFO 13057 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-01 23:50:25.238  INFO 13057 --- [http-nio-9003-exec-8] com.example.msgateway.filters.MyFilter   : **** Requête interceptée ! L'URL est : http://macbookprohj.home:9003/back/users 

@@ -25,7 +25,7 @@ public class ArticleController {
 		List<Article> articles = articleProxy.getArticles();
 		model.addAttribute("articles", articles);
 		
-		return "Home";			
+		return "articles";			
 	}
 	@RequestMapping("/article/{idArticle}")
     public String getArticleByid(@PathVariable Long idArticle, Model model){
