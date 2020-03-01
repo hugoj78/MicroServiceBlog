@@ -11,17 +11,9 @@
 
     <h1>Application Client</h1>
 
-    <div>
-        <div th:each="user : ${users}">
-<!--             <a th:href="@{|/user/${user.id}|}" > -->
-                <p th:text= "${user.username}"></p>      
-<!--             </a> -->
-        </div>
-    </div>
      <div>
-        <div th:each="article : ${articles}">
-<!--             <a th:href="@{|/user/${user.id}|}" > -->
-                <p th:text= "${article.id}"></p>      
+        <div th:each="Article : ${articles}">
+                <p th:text= "${article.title}"></p>
 <!--             </a> -->
         </div>
     </div>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ADD ARTICLE</title>
+
+ <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" >
+</head>
+<body>
+	<form  th:action="@{/articles/add}" th:object="${article}" method="post">
+	    <p>
+	        idAuteur: <input type="number" th:field="{id_user}">
+	    </p>
+	    <p>
+	        idCategorie: <input type="number" th:field="{id_Categorie}">
+	    </p>
+	    <p>
+	        contenu: <input type="text" th:field="{contenu}">
+	    </p>
+	    <p>
+	        date: <input type="text" th:field="{date}">
+	    </p>
+	    <p>
+	        <input type="submit" value="Submit"/>
+	    </p>
+	</form>
+</body>

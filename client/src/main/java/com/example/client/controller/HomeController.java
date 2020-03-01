@@ -7,27 +7,30 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.client.model.Commentaire;
 import com.example.client.model.User;
 import com.example.client.proxies.MSUserProxy;
 
 @Controller
 public class HomeController {
-
 	@Autowired
 	private MSUserProxy userProxy;
 	
 	@RequestMapping("/")
 	public String home(Model model) {
-		
 		List<User> users = userProxy.getUsers();
+		model.addAttribute("users", users);
+		
+		return "Home";			
+	}
+	@RequestMapping("/add")
+	public String addUser(Model model) {
+		List<User> users = userProxy.addUser();	
 		
 		model.addAttribute("users", users);
 		
-		return "Home";
+		return "Home";			
 	}
 	
-	@RequestMapping("/addUser")
-	public String add() {
-		return "Add";	
-	}
+
 }
